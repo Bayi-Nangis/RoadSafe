@@ -14,7 +14,7 @@
         <div class="navbar">
             <div class="logo">
                 <img src="Assets/Index/emojione-v1_vertical-traffic-light.png" alt="">
-                <h1 class="roadSafeTitle">RoadSafe.</h1>
+                <h1 class="roadSafeTitle">RoadSafe</h1>
             </div>
             <div class="list">
                 <li><a href="index.html">HOME</a></li>
@@ -25,38 +25,133 @@
         </div>
         <section class="section-1-traffic"> 
             <h1>Interactive Traffic Signs</h1>
-            <p>Hover or tap any sign to reveal its meaning, how to obey it, and<br> the consequences of ignoring it.</p>
+            <p>Interactive cards to help you understand traffic signs.</p>
         </section>
         <section class="traffic-container">
             <div class="sign-container">
                 <div class="sign-type">
-                    <p>Traffic Sign</p>
+                    <p>Traffic Light</p>
                 </div>
                 <button onclick="playAudio('Assets/Audio/Lampu_Merah.mp3')" class="audio-btn">🔊</button>
                 <img src="Assets/Traffic_Signs/image 8.png" alt="">
-                <h2>Lampu Merah</h2>
-                <h3>Artinya</h3>
-                <p>Kendaraan wajib berhenti sepenuhnya di belakang garis henti (zebra cross). Anda dilarang untuk terus berjalan.</p>
+                <h2>Red Traffic Light</h2>
+                <h3>Meaning</h3>
+                <p>Vehicles must come to a complete stop behind the stop line (zebra crossing). You are prohibited from proceeding.</p>
             </div>
             <div class="sign-container">
                 <div class="sign-type">
-                    <p>Traffic Sign</p>
+                    <p>Traffic Light</p>
                 </div>
                 <button onclick="playAudio('Assets/Audio/Lampu_Kuning.mp3')" class="audio-btn">🔊</button>
-                <img src="Assets/Traffic_Signs/image 8.png" alt="">
-                <h2>Lampu Kuning</h2>
-                <h3>Artinya</h3>
-                <p>Kendaraan harus bersiap-siap untuk berhenti atau berjalan dengan tingkat kehati-hatian tinggi. Saat lampu ini menyala, Anda tidak boleh mempercepat laju kendaraan.</p>
+                <img src="Assets/Traffic_Signs/image 12.png" alt="">
+                <h2>Yellow Traffic Light</h2>
+                <h3>Meaning</h3>
+                <p>Vehicles must be prepared to stop or proceed with extreme caution. When this light is on, you must not accelerate your vehicle.</p>
             </div>
             <div class="sign-container">
                 <div class="sign-type">
-                    <p>Traffic Sign</p>
+                    <p>Traffic Light</p>
                 </div>
                 <button onclick="playAudio('Assets/Audio/Lampu_Hijau.mp3')" class="audio-btn">🔊</button>
-                <img src="Assets/Traffic_Signs/image 8.png" alt="">
-                <h2>Lampu Hijau</h2>
-                <h3>Artinya</h3>
-                <p>Kendaraan boleh melanjutkan perjalanan, tetapi harus berhati-hati.</p>
+                <img src="Assets/Traffic_Signs/image 12 (1).png" alt="">
+                <h2>Green Traffic Light</h2>
+                <h3>Meaning</h3>
+                <p>Vehicles may proceed, but must do so with caution.</p>
+            </div>
+            <div class="sign-container">
+                <div class="sign-type">
+                    <p>Prohibition</p>
+                </div>
+                <button onclick="playAudio('Assets/Audio/Larangan_Masuk.mp3')" class="audio-btn">🔊</button>
+                <img src="Assets/Traffic_Signs/image 10.png" alt="">
+                <h2>Prohibition of Entry</h2>
+                <h3>Meaning</h3>
+                <p>Entry is prohibited for motor vehicles and non-motor vehicles.</p>
+            </div>
+            <div class="sign-container">
+                <div class="sign-type">
+                    <p>Command</p>
+                </div>
+                <button onclick="playAudio('Assets/Audio/Bundaran.mp3')" class="audio-btn">🔊</button>
+                <img src="Assets/Traffic_Signs/image 11.png" alt="">
+                <h2>Roundabout</h2>
+                <h3>Meaning</h3>
+                <p>Vehicles must follow the direction indicated when entering the roundabout.</p>
+            </div>
+            <div class="sign-container">
+                <div class="sign-type">
+                    <p>Command</p>
+                </div>
+                <button onclick="playAudio('Assets/Audio/Kecepatan_Minimum.mp3')" class="audio-btn">🔊</button>
+                <img src="Assets/Traffic_Signs/image 11 (1).png" alt="">
+                <h2>Minimum Speed</h2>
+                <h3>Meaning</h3>
+                <p>The minimum speed required for vehicles, in this example 60 km/jam.</p>
+            </div>
+            <div>
+                <button class="more-btn" onclick="toggleMoreCards()">+ More Cards</button>
+            </div>
+        </section>
+        <section class="hidden traffic-container" id="MoreCardSection">
+            <div class="sign-container">
+                <div class="sign-type">
+                    <p>Alignment</p>
+                </div>
+                <button onclick="playAudio('Assets/Audio/Narrow.mp3')" class="audio-btn">🔊</button>
+                <img src="Assets/Traffic_Signs/image 10 (1).png" alt="">
+                <h2>Narrow Road</h2>
+                <h3>Meaning</h3>
+                <p>The road ahead becomes narrower, and drivers must be prepared to reduce speed and exercise caution.</p>
+            </div>
+            <div class="sign-container">
+                <div class="sign-type">
+                    <p>Prohibition</p>
+                </div>
+                <button onclick="playAudio('Assets/Audio/No_Stopping.mp3')" class="audio-btn">🔊</button>
+                <img src="Assets/Traffic_Signs/image 13.png" alt="">
+                <h2>No Stopping</h2>
+                <h3>Meaning</h3>
+                <p>Vehicles must not stop in the area indicated by the sign.</p>
+            </div>
+            <div class="sign-container">
+                <div class="sign-type">
+                    <p>Prohibition</p>
+                </div>
+                <button onclick="playAudio('Assets/Audio/Keep_Distance.mp3')" class="audio-btn">🔊</button>
+                <img src="Assets/Traffic_Signs/image 14.png" alt="">
+                <h2>Keep Distance</h2>
+                <h3>Meaning</h3>
+                <p>Vehicles must keep distance between themselves and the vehicle ahead, for example by 60 meters.</p>
+            </div>
+            <div class="sign-container">
+                <div class="sign-type">
+                    <p>Prohibition</p>
+                </div>
+                <button onclick="playAudio('Assets/Audio/Larangan_U.mp3')" class="audio-btn">🔊</button>
+                <img src="Assets/Traffic_Signs/image 15.png" alt="">
+                <h2>Prohibition of U-Turn</h2>
+                <h3>Meaning</h3>
+                <p>U-turns are prohibited in the area indicated by the sign.</p>
+            </div>
+            <div class="sign-container">
+                <div class="sign-type">
+                    <p>Prohibition</p>
+                </div>
+                <button onclick="playAudio('Assets/Audio/Max_Speed.mp3')" class="audio-btn">🔊</button>
+                <img src="Assets/Traffic_Signs/image 16.png" alt="">
+                <h2>Maximum Speed</h2>
+                <h3>Meaning</h3>
+                <p>The maximum speed allowed for vehicles in the area indicated by the sign, for example 80 km per hour.</p>
+            </div>
+            <div class="sign-container">
+                <div class="sign-type">
+                    <p>Command</p>
+                </div>
+                <button onclick="playAudio('Assets/Audio/Bus_Only.mp3')" class="audio-btn">🔊</button>
+                <img src="Assets/Traffic_Signs/image 17.png" alt="">
+                <h2>Bus Only</h2>
+                <h3>Meaning</h3>
+                <p>Only buses are allowed to use this lane or road.</p>
             </div>
         </section>
         <section class="footer">
@@ -74,6 +169,16 @@
             audio.play().catch(error => {
             console.log("Playback failed:", error);
             });
+        }
+        function toggleMoreCards() {
+            const hiddenSection = document.getElementById('MoreCardSection');
+            if (hiddenSection) {
+                hiddenSection.classList.remove('hidden');
+                const moreBtn = document.querySelector('.more-btn');
+                if (moreBtn) {
+                    moreBtn.style.display = 'none';
+                }
+            }
         }
     </script>
 </body>
