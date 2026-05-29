@@ -2,6 +2,12 @@ body {
   background-color: #E0F2FE;
   margin: 0;
 }
+
+main{
+  margin: 0;
+  padding: 0;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -77,13 +83,17 @@ body {
 .container{
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-top: 0px;
+  max-width: 100%;
+  gap: 25px;
 }
 
 .container-2{
   display: flex;
   flex-direction: column;
-  padding: 100px 100px;
-  gap: 10px
+  padding: 40px 150px;
+  gap: 15px;
 }
 
 .container-2 h1, 
@@ -102,6 +112,7 @@ body {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 900;
   font-size: 75px;
+  margin: 0;
 }
 
 .linear-gradient{
@@ -109,4 +120,92 @@ body {
   -webkit-background-clip: text; 
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.section-2{
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 150px;
+}
+
+.section-2 h1{
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 900;
+  font-size: 38px;
+  alignment: center;
+  margin: 0;
+}
+
+.section-2 p{
+  font-family: "Noto Sans Georgian", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: rgb(85, 92, 105);
+  text-align: center;
+}
+
+.stat-container{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  border-radius: 20px;
+  border: 1px solid rgb(231,0,11);
+  background-color: rgba(231,0,11,0.05);
+  padding: 20px 10px;
+  width: 376px;
+  height: auto;
+}
+
+.stat-container h1{
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 900;
+  font-size: 60px;
+  margin: 0;
+  color: rgb(193, 0, 7);
+}
+
+.stat-container p{
+  font-family: "Noto Sans Georgian", sans-serif;
+  font-weight: 500;
+  color: rgb(85, 92, 105);
+  text-align: center;
+}
+
+.feature-container{
+  display:flex;
+  flex-direction:column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  background-color: #FFFFFF;
+  padding: 50px 60px;
+  width: 336px;
+  height: auto;
+}
+
+.feature-container h1,
+.feature-container p{
+  text-align: left;
+}
+
+.footer{
+  background-color: #030712;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  color: #FFFFFF;
+  font-family: "Noto Sans Georgian", sans-serif;
+}
+
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
