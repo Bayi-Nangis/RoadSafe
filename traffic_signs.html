@@ -20,9 +20,45 @@
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="traffic_signs.html" class="current">Traffic Signs</a></li>
                 <li><a href="rules.html">Learn Rules</a></li>
+                <li><a href="about.html">About</a></li>
             </div>
         </div>
-        
+        <section class="section-1-traffic"> 
+            <h1>Interactive Traffic Signs</h1>
+            <p>Hover or tap any sign to reveal its meaning, how to obey it, and<br> the consequences of ignoring it.</p>
+        </section>
+        <section class="traffic-container">
+            <div class="sign-container">
+                <div class="sign-type">
+                    <p>Traffic Sign</p>
+                </div>
+                <button onclick="playAudio('Assets/Audio/Lampu_Merah.mp3')" class="audio-btn">🔊</button>
+                <img src="Assets/Traffic_Signs/image 8.png" alt="">
+                <h2>Lampu Merah</h2>
+                <h3>Artinya</h3>
+                <p>Kendaraan wajib berhenti sepenuhnya di belakang garis henti (zebra cross). Anda dilarang untuk terus berjalan.</p>
+            </div>
+            <div class="sign-container">
+                <div class="sign-type">
+                    <p>Traffic Sign</p>
+                </div>
+                <button onclick="playAudio('Assets/Audio/Lampu_Kuning.mp3')" class="audio-btn">🔊</button>
+                <img src="Assets/Traffic_Signs/image 8.png" alt="">
+                <h2>Lampu Kuning</h2>
+                <h3>Artinya</h3>
+                <p>Kendaraan harus bersiap-siap untuk berhenti atau berjalan dengan tingkat kehati-hatian tinggi. Saat lampu ini menyala, Anda tidak boleh mempercepat laju kendaraan.</p>
+            </div>
+            <div class="sign-container">
+                <div class="sign-type">
+                    <p>Traffic Sign</p>
+                </div>
+                <button onclick="playAudio('Assets/Audio/Lampu_Hijau.mp3')" class="audio-btn">🔊</button>
+                <img src="Assets/Traffic_Signs/image 8.png" alt="">
+                <h2>Lampu Hijau</h2>
+                <h3>Artinya</h3>
+                <p>Kendaraan boleh melanjutkan perjalanan, tetapi harus berhati-hati.</p>
+            </div>
+        </section>
         <section class="footer">
             <div class="footer-container">
                 <img src="Assets/Index/emojione-v1_vertical-traffic-light.png" alt="">
@@ -32,5 +68,13 @@
             <p>© 2026 RoadSafe Initiative. A public awareness project.</p>
         </section>
     </main>
+    <script>
+        function playAudio(audioPath) {
+            let audio = new Audio(audioPath);
+            audio.play().catch(error => {
+            console.log("Playback failed:", error);
+            });
+        }
+    </script>
 </body>
 </html>

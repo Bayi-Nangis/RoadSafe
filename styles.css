@@ -36,6 +36,8 @@ main{
   -webkit-background-clip: text; 
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 900;
 }
 
 .list {
@@ -208,4 +210,72 @@ main{
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
+}
+
+.section-1-traffic{
+  background: linear-gradient(180deg, #155DFC, #602FF0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 150px;
+}
+
+.section-1-traffic h1{
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 900;
+  font-size: 75px;
+  alignment: center;
+  margin: 0;
+  color: #FFFFFF;
+}
+
+.section-1-traffic p{
+  font-family: "Noto Sans Georgian", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.traffic-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  background-color: #f3f3f3;
+  padding: 40px;
+}
+
+.sign-container{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: "Noto Sans Georgian", sans-serif;
+}
+
+.sign-container h2,
+.sign-container h3,
+.sign-container p{
+  margin: 0;
+}
+
+
+.sign-type{
+  background-color: rgba(255, 0, 0, 0.2);
+  padding: 0 10px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-family: "Noto Sans Georgian", sans-serif;
+  font-weight: 600;
+  color: rgb(255,0,0);
+}
+
+.audio-btn{
+  border-radius: 30px;
+  padding: 10px 10px;
+  margin: 10px;
 }
