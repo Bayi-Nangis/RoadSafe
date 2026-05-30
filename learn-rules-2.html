@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Georgian:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <title>RoadSafe</title>
+  </head>
+  <body class="learn-rules">
+    
+    <section>
+      <div class="navbar">
+        <div class="logo">
+          <img src="Assets/Index/emojione-v1_vertical-traffic-light.png" alt="Traffic Light" />
+          <h1 class="roadSafeTitle">RoadSafe.</h1>
+        </div>
+        <div class="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="traffic_signs.html">Traffic Signs</a></li>
+          <li><a href="rules.html" class="current">Learn Rules</a></li>
+          <li><a href="about.html">About</a></li>
+        </div>
+      </div>
+    </section>
+
+    <section class="learn-rules-hero">
+      <h1>Learn & Media</h1>
+      <p>Dive deeper into the rules, the risks, and the reality of road safety</p>
+    </section>
+
+    <section class="sd-grid-container">
+  <div class="sd-group" onclick="switchActive(this)">
+    <div class="sd-icon-outside">
+      <i class="fas fa-book-open"></i>
+    </div>
+    <div class="sd-box-inside">
+      <li class="sd-text"><a href="./learn-rules-1.html">Rules</a></li>
+    </div>
+  </div>
+
+  <div class="sd-group active-sd" onclick="switchActive(this)">
+    <div class="sd-icon-outside">
+      <i class="fas fa-balance-scale"></i>
+    </div>
+    <div class="sd-box-inside">
+      <li class="sd-text"><a href="./learn-rules-2.html">Violations</a></li>
+    </div>
+  </div>
+
+  <div class="sd-group" onclick="switchActive(this)">
+    <div class="sd-icon-outside">
+      <i class="fas fa-chart-bar"></i>
+    </div>
+    <div class="sd-box-inside">
+      <li class="sd-text"><a href="./learn-rules-3.html">Statistics</a></li>
+    </div>
+  </div>
+</section>
+
+    <section class="violation-gr">
+      <div>
+        <h1>Common Violations & Consequences</h1>
+        <p>Ignorance of the law is no excuse. Breaking rules costs money, licenses, and lives</p>
+      </div>
+    </section>
+
+    <section class="gr-table-container">
+      <div class="gr-row gr-header">
+        <p>Violation</p>
+        <p>Penalty</p>
+        <p>Severity</p>
+      </div>
+
+      <div class="gr-row">
+        <p>Speeding > 20mph over</p>
+        <p>Heavy Fine & License Suspension</p>
+        <p><span class="gr-badge gr-high">HIGH</span></p>
+      </div>
+
+      <div class="gr-row">
+        <p>Running Red Light</p>
+        <p>Fine & Points on License</p>
+        <p><span class="gr-badge gr-high">HIGH</span></p>
+      </div>
+
+      <div class="gr-row">
+        <p>DUI / Intoxicated</p>
+        <p>Jail, Heavy Fine, Revoked License</p>
+        <p><span class="gr-badge gr-critical">CRITICAL</span></p>
+      </div>
+
+      <div class="gr-row">
+        <p>No Seatbelt</p>
+        <p>Moderate Fine</p>
+        <p><span class="gr-badge gr-medium">MEDIUM</span></p>
+      </div>
+
+      <div class="gr-row">
+        <p>Illegal Parking</p>
+        <p>Small Fine / Towing</p>
+        <p><span class="gr-badge gr-low">LOW</span></p>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="footer-container">
+        <img src="Assets/Index/emojione-v1_vertical-traffic-light.png" alt="Traffic Light" />
+        <h1>RoadSafe</h1>
+      </div>
+      <p>Educating drivers, protecting lives. Drive smart, arrive safe.</p>
+      <p>© 2026 RoadSafe Initiative. A public awareness project.</p>
+    </section>
+  </head>
+</html>

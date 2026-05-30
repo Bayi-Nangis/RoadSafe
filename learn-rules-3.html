@@ -1,0 +1,166 @@
+<!-- @format -->
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles2.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+    	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    	<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Georgian:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+		/>
+		<title>RoadSafe</title>
+	</head>
+	<body class="learn-rules">
+		<section>
+			<div class="navbar">
+				<div class="logo">
+					<img
+						src="Assets/Index/emojione-v1_vertical-traffic-light.png"
+						alt="Traffic Light"
+					/>
+					<h1 class="roadSafeTitle">RoadSafe.</h1>
+				</div>
+				<div class="list">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="traffic_signs.html">Traffic Signs</a></li>
+					<li><a href="rules.html" class="current">Learn Rules</a></li>
+					<li><a href="about.html">About</a></li>
+				</div>
+			</div>
+		</section>
+
+		<section class="learn-rules-hero">
+			<h1>Learn & Media</h1>
+			<p>
+				Dive deeper into the rules, the risks, and the reality of road safety
+			</p>
+		</section>
+
+		<section class="sd-grid-container">
+			<div class="sd-group" onclick="switchActive(this)">
+				<div class="sd-icon-outside">
+					<i class="fas fa-book-open"></i>
+				</div>
+				<div class="sd-box-inside">
+					<li class="sd-text"><a href="./learn-rules-1.html">Rules</a></li>
+				</div>
+			</div>
+
+			<div class="sd-group" onclick="switchActive(this)">
+				<div class="sd-icon-outside">
+					<i class="fas fa-balance-scale"></i>
+				</div>
+				<div class="sd-box-inside">
+					<li class="sd-text"><a href="./learn-rules-2.html">Violations</a></li>
+				</div>
+			</div>
+
+			<div class="sd-group active-sd" onclick="switchActive(this)">
+				<div class="sd-icon-outside">
+					<i class="fas fa-chart-bar"></i>
+				</div>
+				<div class="sd-box-inside">
+					<li class="sd-text"><a href="./learn-rules-3.html">Statistics</a></li>
+				</div>
+			</div>
+		</section>
+
+		<section class="statistics-st">
+			<div>
+				<h1>Why Accidents Happen</h1>
+				<p>
+					Data shows that the vast majority of accidents are caused by human
+					error.
+				</p>
+			</div>
+		</section>
+
+		<div class="chart-container">
+			<h2 class="chart-title">Primary Causes of Road Accidents</h2>
+
+			<div class="vertical-chart-layout">
+				<div class="chart-y-axis">
+					<div class="y-label">32%</div>
+					<div class="y-label">24%</div>
+					<div class="y-label">16%</div>
+					<div class="y-label">8%</div>
+					<div class="y-label">0%</div>
+				</div>
+
+				<div class="chart-main-area">
+					<div class="chart-grid-lines">
+						<div class="grid-line"></div>
+						<div class="grid-line"></div>
+						<div class="grid-line"></div>
+						<div class="grid-line"></div>
+						<div class="grid-line"></div>
+					</div>
+
+					<div class="vertical-bar-chart">
+						<div class="v-chart-column">
+							<div class="v-chart-bar-wrapper">
+								<div class="v-chart-bar" style="height: 93.75%">
+									<span class="v-chart-value">30%</span>
+								</div>
+							</div>
+							<div class="v-chart-label">Speeding</div>
+						</div>
+
+						<div class="v-chart-column">
+							<div class="v-chart-bar-wrapper">
+								<div class="v-chart-bar" style="height: 78.12%">
+									<span class="v-chart-value">25%</span>
+								</div>
+							</div>
+							<div class="v-chart-label">Distraction</div>
+						</div>
+
+						<div class="v-chart-column">
+							<div class="v-chart-bar-wrapper">
+								<div class="v-chart-bar" style="height: 56.25%">
+									<span class="v-chart-value">18%</span>
+								</div>
+							</div>
+							<div class="v-chart-label">DUI</div>
+						</div>
+
+						<div class="v-chart-column">
+							<div class="v-chart-bar-wrapper">
+								<div class="v-chart-bar" style="height: 37.5%">
+									<span class="v-chart-value">12%</span>
+								</div>
+							</div>
+							<div class="v-chart-label">Weather</div>
+						</div>
+
+						<div class="v-chart-column">
+							<div class="v-chart-bar-wrapper">
+								<div class="v-chart-bar" style="height: 46.87%">
+									<span class="v-chart-value">15%</span>
+								</div>
+							</div>
+							<div class="v-chart-label">Other</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section class="footer">
+			<div class="footer-container">
+				<img
+					src="Assets/Index/emojione-v1_vertical-traffic-light.png"
+					alt="Traffic Light"
+				/>
+				<h1>RoadSafe</h1>
+			</div>
+			<p>Educating drivers, protecting lives. Drive smart, arrive safe.</p>
+			<p>© 2026 RoadSafe Initiative. A public awareness project.</p>
+		</section>
+	</body>
+</html>
