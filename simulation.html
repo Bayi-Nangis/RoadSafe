@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoadSafe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Georgian:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="page-wrapper">
+        <div class="navbar">
+            <div class="logo">
+                <img src="Assets/Index/emojione-v1_vertical-traffic-light.png" alt="">
+                <h1 class="roadSafeTitle">RoadSafe</h1>
+            </div>
+            <div class="list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="traffic_signs.html">Traffic Signs</a></li>
+                <li><a href="simulation.html" class="current">Simulation</a></li>
+                <li><a href="learn-rules-1.html">Learn Rules</a></li>
+                <li><a href="about.html">About</a></li>
+            </div>
+        </div>
+        <section>
+            <div class="flex-row-container">
+                <div class="quiz-video">
+                    <iframe id="youtube-video" width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="quiz-content">
+                    <div class="quiz-content-images">
+                        <img src="Assets/Traffic_Signs/image 8.png" alt="" id="sign-image">
+                        <img src="" alt="" id="pertanyaan">
+                    </div>
+                    <div class="quiz-content-images">
+                        <button id="left-button" onclick="checkAnswer('left')">placeholder</button>
+                        <button id="right-button" onclick="checkAnswer('right')">placeholder</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
