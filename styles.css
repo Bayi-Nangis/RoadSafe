@@ -265,6 +265,7 @@ main{
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   text-align: center;
   font-family: "Noto Sans Georgian", sans-serif;
+  height: auto;
 }
 
 .sign-container h2,
@@ -319,6 +320,8 @@ main{
 }
 
 .quiz-video{
+  display: flex;
+  flex-direction: column;
   margin: 20px;
   width: 100%;
   height: 100%;
@@ -326,6 +329,16 @@ main{
   border-radius: 20px;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   padding: 20px;
+  align-items: center;
+  gap: 20px;
+}
+
+.quiz-video h1{
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 900;
+  font-size: 38px;
+  alignment: center;
+  margin: 0;
 }
 
 .quiz-content{
@@ -340,12 +353,20 @@ main{
   padding: 20px;
   list-style: none;
   gap: 20px;
+  align-items: center;
+}
+
+.quiz-content h1{
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 900;
+  font-size: 38px;
+  alignment: center;
+  margin: 0;
 }
 
 .quiz-content-images{
   position: relative;
   display: flex;
-  margin: 20px;
   width: 100%;
   height: 100%;
   gap: 40px;
@@ -366,6 +387,38 @@ main{
   width: 25%;
   height: auto;
   border-radius: 20px;
+}
+
+.sign-hover{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 500px;
+  margin: 20px;
+}
+
+.sign-hover img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.static-image {
+  z-index: 2;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.gif-image {
+  z-index: 1;
+}
+
+.sign-hover:hover .static-image {
+  opacity: 0;
 }
 
 .hidden{

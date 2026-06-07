@@ -10,16 +10,6 @@ const trafficSigns =[
     wrongAnswer: "Assets/Simulation/roundabout-salah.gif",
 },
 {
-    filename: "Assets/Traffic_Signs/image 12.png",
-    correctText: "Proceed With Caution",
-    wrongText: "Go",
-    correctSide: "right",
-    videoName: "https://www.youtube.com/embed/XOLxgtc1Ffg?si=tgtit2uc9wVsbKUZ",
-    question: "Assets/Simulation/roundabout-img.png",
-    rightAnswer: "Assets/Simulation/roundabout-benar.gif",
-    wrongAnswer: "Assets/Simulation/roundabout-salah.gif",
-},
-{
     filename: "Assets/Traffic_Signs/image 12 (1).png",
     correctText: "Go",
     wrongText: "Stop Completely",
