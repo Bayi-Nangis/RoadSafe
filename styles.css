@@ -419,6 +419,7 @@ main{
 
 .sign-hover:hover .static-image {
   opacity: 0;
+  cursor: pointer;
 }
 
 .hidden{
